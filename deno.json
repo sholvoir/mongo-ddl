@@ -1,0 +1,11 @@
+{
+    "lock": false,
+    "imports": {
+        "std/": "https://deno.land/std@0.205.0/",
+        "sholvoir/": "https://www.sholvoir.com/generic/",
+        "mongo": "https://deno.land/x/mongo@v0.32.0/mod.ts"
+    },
+    "tasks": {
+        "start": "PORT=8090 deno run -A --env server.ts"
+    }
+}
