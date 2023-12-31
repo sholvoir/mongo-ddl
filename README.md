@@ -1,1 +1,1 @@
-# mongo-create-index
+# mongo-ddl
