@@ -2,7 +2,7 @@
     "lock": false,
     "imports": {
         "std/": "https://deno.land/std@0.210.0/",
-        "sholvoir/": "https://www.sholvoir.com/generic/",
+        "generic-ts/": "https://raw.githubusercontent.com/sholvoir/generic-ts/main/",
         "mongo": "https://deno.land/x/mongo@v0.32.0/mod.ts"
     },
     "tasks": {

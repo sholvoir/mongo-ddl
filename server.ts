@@ -1,9 +1,10 @@
-import { JWT } from "sholvoir/jwt.ts";
+import { JWT } from "generic-ts/jwt.ts";
 import { STATUS_CODE } from "std/http/status.ts"
 import { MongoClient, type IndexOptions } from "mongo";
 
 const port = +(Deno.env.get('PORT') ?? 80);
-const jwt = await new JWT().importKey(Deno.env.get('APP_KEY')!);
+const jwt = new JWT({ iss: 'sholvoir.com', sub: 'mongo-ddl' });
+await jwt.importKey(Deno.env.get('APP_KEY')!);
 
 const host = Deno.env.get('MONGO_HOST');
 const user = Deno.env.get('MONGO_USER');
